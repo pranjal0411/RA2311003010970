@@ -36,13 +36,13 @@ export const NotificationCard: React.FC<Props> = ({ notification, isRead, onMark
       }}
     >
       <CardContent>
-        <Box display="flex" justifyContent="space-between" alignItems="center" mb={1}>
+        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 1 }}>
           <Chip label={notification.Type} color={getColor(notification.Type)} size="small" />
           <Typography variant="caption" color="textSecondary">
             {new Date(notification.Timestamp).toLocaleString()}
           </Typography>
         </Box>
-        <Typography variant={isRead ? 'body1' : 'subtitle1'} fontWeight={isRead ? 'normal' : 'bold'}>
+        <Typography variant={isRead ? 'body1' : 'subtitle1'} sx={{ fontWeight: isRead ? 'normal' : 'bold' }}>
           {notification.Message}
         </Typography>
       </CardContent>

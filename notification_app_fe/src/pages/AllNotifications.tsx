@@ -45,7 +45,7 @@ export const AllNotifications: React.FC = () => {
 
   return (
     <Box>
-      <Typography variant="h4" mb={2}>All Notifications</Typography>
+      <Typography variant="h4" sx={{ mb: 2 }}>All Notifications</Typography>
       <FilterBar currentFilter={filter} onFilterChange={setFilter} />
       
       {loading && <CircularProgress />}

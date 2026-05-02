@@ -16,7 +16,7 @@ export const FilterBar: React.FC<Props> = ({ currentFilter, onFilterChange }) =>
   };
 
   return (
-    <Box display="flex" gap={1} mb={3} flexWrap="wrap">
+    <Box sx={{ display: 'flex', gap: 1, mb: 3, flexWrap: 'wrap' }}>
       {filters.map(f => (
         <Chip
           key={f}
